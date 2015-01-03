@@ -34,8 +34,7 @@ Template Name: Home page
 				</div>
 			</div>
 		</div>
-
-
+		
 <!--==============================Content=================================-->
 
 			<div class="container_12">

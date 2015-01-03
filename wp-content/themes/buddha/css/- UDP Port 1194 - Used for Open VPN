@@ -1,0 +1,97 @@
+- UDP Port 1194 - Used for Open VPN
+
+
+enable OpenVPN then run netstat -nupl | grep 1194
+check if disabling OpenVPN closes this port
+
+
+---------------------------------------------------------------------
+
+- TCP Port 18000 For HTTP Communication
+
+iptables -nvL 
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+17233   12M ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0           
+    0     0 ACCEPT     all  --  tun10000 *       0.0.0.0/0            0.0.0.0/0                        // enabled only for OpenVPN connection     
+    0     0 ACCEPT     tcp  --  *      *       110.44.116.43        0.0.0.0/0            tcp dpt:514
+    0     0 ACCEPT     tcp  --  *      *       127.0.0.1            0.0.0.0/0            tcp dpt:514
+    0     0 ACCEPT     udp  --  *      *       110.44.116.43        0.0.0.0/0            udp dpt:514
+    0     0 ACCEPT     udp  --  *      *       127.0.0.1            0.0.0.0/0            udp dpt:514
+    0     0 ACCEPT     tcp  --  *      *       110.44.116.43        0.0.0.0/0            tcp dpt:515
+    0     0 ACCEPT     tcp  --  *      *       127.0.0.1            0.0.0.0/0            tcp dpt:515
+  332 20912 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+  235 41991 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:443
+    0     0 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:1194
+    0     0 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+   89  4628 LOG        tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpts:1:32767 limit: up to 1/min burst 1 mode srcip-dstport htable-expire 60 LOG flags 0 level 7 prefix "set_firewall; denied tcp; "
+  128 26933 LOG        udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpts:1:32767 limit: up to 1/min burst 1 mode srcip-dstport htable-expire 60 LOG flags 0 level 7 prefix "set_firewall; denied udp; "
+   89  4628 DROP       tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpts:1:32767
+  183 33220 DROP       udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpts:1:32767
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 17571 packets, 12M bytes)
+
+
+
+
+
+---------------------------------------------------------------------
+
+
+cd /opt/immune/installed/system/root_actions/remote_con_client.sh
+add --verb 3
+
+save and restart remote_con_client_<remote_host_ip> service
+sv restart /opt/immune/etc/service/remote_con_server/
+
+cat /opt/immune/var/log/service/remote_con_client_<remote_host_ip>/current | grep TLS
+
+
+
+us=441993   cipher_list = 'TLS-DHE-RSA-WITH-AES-256-CBC-SHA256'
+us=445638 TLS: Initial packet from [AF_INET]10.45.1.236:1194, sid=b79a363d 7b8ecc16
+us=534636 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA256, 2048 bit RSA
+us=758323   cipher_list = 'TLS-DHE-RSA-WITH-AES-256-CBC-SHA256'
+us=761973 TLS: Initial packet from [AF_INET]10.45.1.236:1194, sid=269c5f5f dfb9c15e
+us=829100 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA256, 2048 bit RSA
+
+---------------------------------------------------------------------
+
+cat /opt/immune/var/log/service/remote_con_client_<remote_host_ip>/current | grep CBC
+
+us=441781   ciphername = 'AES-256-CBC'
+us=441993   cipher_list = 'TLS-DHE-RSA-WITH-AES-256-CBC-SHA256'
+us=444414 Local Options String: 'V4,dev-type tun,link-mtu 1570,tun-mtu 1500,proto UDPv4,comp-lzo,cipher AES-256-CBC,auth SHA256,keysize 256,key-method 2,tls-client'
+
+---------------------------------------------------------------------
+
+Change directory
+cd /opt/immune/etc/remote_connection/certificates
+
+openssl x509 -in ca.crt -text -noout | less
+
+
+   Signature Algorithm: sha256WithRSAEncryption 
+
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+
+
+---------------------------------------------------------------------
+Change directory
+cd /opt/immune/etc/remote_connection/certificates
+
+openssl dhparam -in dh2048.pem -text
+
+PKCS#3 DH Parameters: (2048 bit)
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+
+
