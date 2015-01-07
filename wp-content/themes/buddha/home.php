@@ -4,7 +4,7 @@ Template Name: Home page
 */
 ?>
 
-<?php get_header(); the_post();?>
+<?php get_header(); //the_post();?>
 
 	<div class="fluidHeight container_12">
 			<div class="sliderContainer">
@@ -34,6 +34,7 @@ Template Name: Home page
 				</div>
 			</div>
 		</div>
+		
 <!--==============================Content=================================-->
 
 			<div class="container_12">
@@ -161,6 +162,5 @@ Template Name: Home page
 				</div>
 			</div>
 		</div>
-
 
 <?php get_footer(); ?>

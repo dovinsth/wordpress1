@@ -55,7 +55,11 @@
 						</a>
 					</h1>
 					<div class="menu_block ">
-						<a href="#" class="donate">DONATE</a>
+						<a href="<?php 
+										// $page_id = get_permalink(5);
+										echo get_page_link(104); 
+
+										?>" class="donate">DONATE</a>
 						<div class="clear"></div>
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<?php wp_nav_menu( array( 'menu' => 'main' ,
