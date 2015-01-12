@@ -6,8 +6,8 @@ Template Name: Home page
 
 <?php get_header(); //the_post();?>
 
-	<div>
-		<?php echo do_shortcode('[oqeygallery id=3]'); ?>
+	<div style="margin-left:3%">
+		<?php echo do_shortcode('[oqeygallery id=3 width=1200 height=450]'); ?>
 	</div>
 
 	<!-- <div class="fluidHeight container_12">
