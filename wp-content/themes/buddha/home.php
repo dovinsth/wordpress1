@@ -6,7 +6,11 @@ Template Name: Home page
 
 <?php get_header(); //the_post();?>
 
-	<div class="fluidHeight container_12">
+	<div>
+		<?php echo do_shortcode('[oqeygallery id=3]'); ?>
+	</div>
+
+	<!-- <div class="fluidHeight container_12">
 			<div class="sliderContainer">
 				<div class="iosSlider">
 					<div class="slider">
@@ -34,7 +38,7 @@ Template Name: Home page
 				</div>
 			</div>
 		</div>
-		
+		 -->
 <!--==============================Content=================================-->
 
 			<div class="container_12">
