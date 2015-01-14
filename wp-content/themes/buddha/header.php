@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 	<meta name = "format-detection" content = "telephone=no" />
     <link rel="stylesheet" type="text/css"  href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	<link rel="icon" href="<?php echo get_template_directory_uri().'/images/logo.png'; ?>">
+	<link rel="icon" href="<?php echo get_template_directory_uri().'/images/main-logo.png'; ?>">
 	<!-- <link rel="shortcut icon" href="http://localhost/wordpress1/wp-content/themes/buddha/images/favicon.ico" /> -->
-	<link rel="stylesheet" href="http://localhost/wordpress1/wp-content/themes/buddha/css/form.css">
-	<link rel="stylesheet" href="http://localhost/wordpress1/wp-content/themes/buddha/css/thumbs.css">
-	<link rel="stylesheet" href="http://localhost/wordpress1/wp-content/themes/buddha/css/slider.css">
-    <link rel="stylesheet" href="http://localhost/wordpress1/wp-content/themes/buddha/css/touchTouch.css">
-    <link rel="stylesheet" href="http://localhost/wordpress1/wp-content/themes/buddha/css/ie.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/form.css'; ?>">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/thumbs.css'; ?>">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/slider.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/touchTouch.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/css/ie.css'; ?>">
     
 
 	<!--<link rel="stylesheet" href="../css/style.css"> -->
@@ -50,8 +50,8 @@
 			<div class="container_12">
 				<div class="grid_12">
 					<h1>
-						<a href="index.html">
-							<img src="http://localhost/wordpress1/wp-content/themes/buddha/images/logo.png" alt="Your Happy Family">
+						<a href="../home">
+							<img src="http://localhost/wordpress1/wp-content/themes/buddha/images/main-logo1.png" alt="Your Happy Family">
 						</a>
 					</h1>
 					<div class="menu_block ">

@@ -30,7 +30,7 @@ $post = get_post_field('post_content', $page_id);
 
 ?>
 
-	<div style="margin-left:3%">
+	<div style="margin-left:10%">
 		<?php echo do_shortcode("[$post .'width=1200 height=450']"); ?>
 	</div>
 
