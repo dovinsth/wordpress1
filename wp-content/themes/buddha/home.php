@@ -6,8 +6,32 @@ Template Name: Home page
 
 <?php get_header(); //the_post();?>
 
+<!-- Getting content for Latest News section  -->
+<?php $args = array(
+    'numberposts' => 5,
+    'offset' => 0,
+    'category' => get_cat_ID('news') ,
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'include' => '',
+    'exclude' => '',
+    'meta_key' => '',
+    'meta_value' => '',
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'suppress_filters' => true );
+
+    $recent_news = wp_get_recent_posts( $args, ARRAY_A );
+?>
+
+
+<?php $page_id = get_ID_by_slug("home");
+$post = get_post_field('post_content', $page_id);
+
+?>
+
 	<div style="margin-left:3%">
-		<?php echo do_shortcode('[oqeygallery id=3 width=1200 height=450]'); ?>
+		<?php echo do_shortcode("[$post .'width=1200 height=450']"); ?>
 	</div>
 
 	<!-- <div class="fluidHeight container_12">
@@ -41,14 +65,24 @@ Template Name: Home page
 		 -->
 <!--==============================Content=================================-->
 
+
+
+
+
+
 			<div class="container_12">
 				<div class="grid_6">
-					<h2>Meet Our Team</h2>
+					<h2>Recent Post</h2>
 					<img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
 					<div class="extra_wrapper">
-						<p class="col2"><a href="#">Cras facilisis, nulla vel viverra tor, leo magna sodales felis, quis </a></p>
+						<?php query_posts("post_per_page =1 "); the_post();?>
+							<?php the_title(); ?>
+							<?php the_excerpt();?>
+							<a href="<?php the_permalink();?>" class="btn">More...</a>
+						<?php wp_reset_query();?>
+						<!-- <p class="col2"><a href="#">Cras facilisis, nulla vel viverra tor, leo magna sodales felis, quis </a></p>
 						Proin pharetra luctus diamer scelerisque eros convallisa <br>
-						<a href="#" class="btn">Learn More</a>
+						<a href="#" class="btn">Learn More</a> -->
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -66,7 +100,13 @@ Template Name: Home page
 				<div class="grid_3">
 					<h2>Latest News</h2>
 					<ul class="list">
-						<li>
+					<?php   
+					    foreach( $recent_news as $recent ){ 
+
+					        echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+					    }
+					?>
+						<!-- <li>
 							<time datetime="2014-01-01">29<span>Jan</span></time>
 							<div class="extra_wrapper">
 								<div class="title col2"><a href="#">Vivamuagna</a></div>
@@ -95,7 +135,7 @@ Template Name: Home page
 								<div class="title col2"><a href="#">Meloamuar</a></div>
 								ferus at magne malesuada faui
 							</div>
-						</li>
+						</li> -->
 					</ul>
 					<blockquote class="bq1">
 						<div class="title">Testimonials</div>

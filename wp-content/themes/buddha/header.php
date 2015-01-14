@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<title>Home</title>
+	<title>WorldAmity</title>
 	<meta charset="utf-8">
 	<meta name = "format-detection" content = "telephone=no" />
     <link rel="stylesheet" type="text/css"  href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	<link rel="icon" href="http://localhost/wordpress1/wp-content/themes/buddha/images/favicon.ico">
-	<link rel="shortcut icon" href="http://localhost/wordpress1/wp-content/themes/buddha/images/favicon.ico" />
+	<link rel="icon" href="<?php echo get_template_directory_uri().'/images/logo.png'; ?>">
+	<!-- <link rel="shortcut icon" href="http://localhost/wordpress1/wp-content/themes/buddha/images/favicon.ico" /> -->
 	<link rel="stylesheet" href="http://localhost/wordpress1/wp-content/themes/buddha/css/form.css">
 	<link rel="stylesheet" href="http://localhost/wordpress1/wp-content/themes/buddha/css/thumbs.css">
 	<link rel="stylesheet" href="http://localhost/wordpress1/wp-content/themes/buddha/css/slider.css">
