@@ -31,6 +31,25 @@
 		$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
+
+<style>
+header{
+  background-color: #ECFFFF;
+}
+body{
+/*background:
+linear-gradient(27deg, #E3E4FA 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #E3E4FA 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #E3E4FA 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #E3E4FA 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #E3E4FA 10px, transparent 10px),
+linear-gradient(#E3E4FA 25%, #E3E4FA 25%, #E3E4FA 50%, transparent 50%, transparent 75%, #E3E4FA 75%, #E3E4FA);*/
+background-color: #ECFFFF;
+/*background-size: 20px 20px;*/
+
+}
+
+</style>
 	<!--[if lt IE 8]>
 	<div style=' clear: both; text-align:center; position: relative;'>
 		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -46,7 +65,7 @@
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
-		<header>
+		<header >
 			<div class="container_12">
 				<div class="grid_12">
 					<h1>

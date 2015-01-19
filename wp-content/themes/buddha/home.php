@@ -30,8 +30,8 @@ $post = get_post_field('post_content', $page_id);
 
 ?>
 
-	<div style="margin-left:10%">
-		<?php echo do_shortcode("[$post .'width=1200 height=450']"); ?>
+	<div style="margin-left:1%">
+		 <?php echo do_shortcode("[$post .'width=1200 height=450']"); ?>
 	</div>
 
 	<!-- <div class="fluidHeight container_12">
@@ -73,12 +73,12 @@ $post = get_post_field('post_content', $page_id);
 			<div class="container_12">
 				<div class="grid_6">
 					<h2>Recent Post</h2>
-					<img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
+					<!-- <img src="images/page1_img1.jpg" alt="" class="img_inner fleft"> -->
 					<div class="extra_wrapper">
 						<?php query_posts("post_per_page =1 "); the_post();?>
 							<?php the_title(); ?>
 							<?php the_excerpt();?>
-							<a href="<?php the_permalink();?>" class="btn">More...</a>
+							<a href="<?php the_permalink();?>" class="btn">Continue Reading...</a>
 						<?php wp_reset_query();?>
 						<!-- <p class="col2"><a href="#">Cras facilisis, nulla vel viverra tor, leo magna sodales felis, quis </a></p>
 						Proin pharetra luctus diamer scelerisque eros convallisa <br>
@@ -89,10 +89,10 @@ $post = get_post_field('post_content', $page_id);
 				<div class="grid_5 prefix_1">
 					<h2>Our Mission</h2>
 					<div class="rel1">
-						<p>Following the <span class="col1"><a href="http://blog.templatemonster.com/free-website-templates/" >link</a></span> you’ll find all you wanted to know about free theme released by TemplateMonster.</p>
-						Need more themes of this kind? Find a variety of premium <span class="col1"><a href="http://www.templatemonster.com/properties/topic/society-people/" rel="nofollow">society &amp; people templates</a></span> at TemplateMonster.
+						<!-- Our Mission Content Here -->
+						<p> Need to update this section with our mission.</p>
 					</div>
-					<a href="#" class="btn">Learn More</a>
+					<a href="#" class="btn">Continue Reading...</a>
 				</div>
 			</div>
 			<div class="hor"></div>
@@ -138,66 +138,66 @@ $post = get_post_field('post_content', $page_id);
 						</li> -->
 					</ul>
 					<blockquote class="bq1">
-						<div class="title">Testimonials</div>
-						<p>Nulla vel viverra auctorleo magna sodales felis, quis malesuada nibh odio ut </p>
-						<div class="col2">Sandra Wood</div>
+						<div class="title">Upcoming Event</div>
+						<p> Will contain recent upcoming event. Need to finalize. </p>
+						<div class="col2">Location Here</div>
 					</blockquote>
 				</div>
 				<div class="grid_9">
-					<h2>Our Campaigns</h2>
+					<h2>Our Campaigns</h2> <!-- Need to make it dynamic -->
 					<section>
 						<ul id="da-thumbs" class="da-thumbs">
 							<li>
 								<a href="#">
-								<img src="images/th1.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th1.jpg';?>" alt="" />
 								<div><span>Helping Adults</span></div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-								<img src="images/th2.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th2.jpg';?>" alt="" />
 								<div><span>Helping Children</span></div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-								<img src="images/th3.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th3.jpg';?>" alt="" />
 								<div><span>Empowering Women</span></div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-								<img src="images/th4.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th4.jpg';?>" alt="" />
 								<div><span>Homes for Veterans</span></div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-								<img src="images/th5.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th5.jpg';?>" alt="" />
 								<div><span>Saving Lives</span></div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-								<img src="images/th6.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th6.jpg';?>" alt="" />
 								<div><span>Invest in Kids</span></div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-								<img src="images/th7.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th7.jpg';?>" alt="" />
 								<div><span>Healthy Nutrition</span></div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-								<img src="images/th8.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th8.jpg';?>" alt="" />
 								<div><span>Educated World</span></div>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-								<img src="images/th9.jpg" alt="" />
+								<img src="<?php echo get_template_directory_uri().'/images/th9.jpg';?>" alt="" />
 								<div><span>Against Hunger</span></div>
 								</a>
 							</li>

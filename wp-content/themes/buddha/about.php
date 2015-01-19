@@ -5,7 +5,7 @@ Template Name: About Us Page
 ?>
 
 <?php get_header();?>
-<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - March 24, 2014!</div>
+<div class="content">
 			<div class="container_12">
 				<div class="grid_12">
 					<h2>Find Us</h2>
@@ -17,29 +17,29 @@ Template Name: About Us Page
 							<h2>Address:</h2>
 							<address>
 								<span class="fa fa-home"></span>
-								138 Atlantis Ln <br>
-								Kingsport <br>
-								Illinois 121164
+								Address Here...
 							</address>
 						</div>
 						<div class="grid_4">
 							<h2>Phones:</h2>
 							<div class="m_phone">
 								<div class="fa fa-phone"></div>
-								+1 800 559 6580
+								+977-0123456789
+								<!-- phone no 1 -->
 							</div>
 							<div class="m_phone">
 								<div class="fa fa-print"></div>
-								+1 504 889 9898138
+								+977-01234567
+								<!-- phone no 2 -->
 							</div>
 						</div>
 						<div class="grid_4 omega">
 							<h2>Email:</h2>
-							<a href="#"><span class="fa fa-envelope-o"></span> mail@demolink.org</a>
+							<a href="#"><span class="fa fa-envelope-o"></span> Mail Address here...</a>
 						</div>
 						<div class="clear"></div>
 					</div>
-					<h2>Contact Form</h2>
+					<!-- <h2>Contact Form</h2>
 					24/7 support is available for all <span class="col1"><a href="http://www.templatemonster.com/website-templates.php" rel="nofollow">premium</a></span> themes produced by TemplateMonster. Free themes go without it.
 					<br>
 					If you want a help in customization of the chosen freebie, address to <span class="col1"><a href="http://www.templatetuning.com/" rel="nofollow">TemplateTuning.</a></span>
@@ -74,7 +74,7 @@ Template Name: About Us Page
 								<a href="#" data-type="submit" class="btn">Send</a>
 							</div>
 						</div>
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</div>

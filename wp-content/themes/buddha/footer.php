@@ -31,9 +31,14 @@
 			</div>
 			-->
 <!--==============================footer=================================-->
+
+
 		<footer>
+
 			<div class="container_12">
-				<div class="grid_12">
+			
+				<div class="grid_12" align="center">
+					<?php echo do_shortcode("[LoginRadius_Share]"); ?>
 					<div class="copy">
 						Worldamity &copy; 2014 | <a href="#">Privacy Policy</a>
 					</div>
