@@ -38,13 +38,21 @@ body {
 .grid_7,
 .grid_8,
 .grid_9,
-.grid_10,
 .grid_11,
 .grid_12 {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
+}
+.grid_10{
+  display: inline;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+
 }
 
 .push_1, .pull_1,
