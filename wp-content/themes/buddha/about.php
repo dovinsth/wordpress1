@@ -8,6 +8,22 @@ Template Name: About Us Page
 <div class="content">
 			<div class="container_12">
 				<div class="grid_12">
+					<h2>About Us</h2>
+					<p align="justify">
+					Lumbini-Kapilvastu Day Movement (LKDM), is a global movement institutionalized in 2010 to spread Buddha’s peace and nonviolence messages and promote Buddha's birthplace Lumbini, Nepal.  One of the major missions of the Movement is to reinforce democracy and World Peace Movement by dismissing the misconception on Buddha’ birthplace as the right to information is the key to both Movements. 
+					</br> </br>   
+					Following the evolution of the LKD Movement there was a large social network surge especially in Facebook and Google with correct Buddha’s birthplace information. As such Google has corrected the information in March 2010.
+					</br> </br>
+					On behalf of the LKD Movement the Global Coordinator Mr. Ram Kumar Shrestha wrote to that time Prime Minister of Nepal, Madhav Kumar Nepal in August 2010 suggesting mobilizing diplomatic missions to correct the mis-information. Because of the LKD Movement activities the British Museum has already decided to correct their references to the Birthplace of Buddha.
+					</br> </br>
+					Indian Prime Minister Narendra Modi during his Nepal visit reiterated that Nepal is the country where apostle of peace in the world, Buddha was born. 
+					</br> </br>
+					We Nepalese already established Buddha statue at the Peace Palace, the Headquarters of International Court of Justice (ICJ) in Hague, the Netherlands; presented Buddha gift to that time Australian Prime Minister Julia Gillard, and presented Buddha statue to the Director of The Norwegian Nobel Institute Prof. Geir Lundestad. 
+ 					</br> </br>
+					The Movement already felicitated former Prime Minster of Nepal Puspa Kamal Dahal Prachanda, former minister Deep Kumar Upadhya, former ambassador to Korea Kamal Prasad Koirala, senior journalist, Bhikkchhu and some foreigners and planning to honour internationally recognised persons like Prof. Kenzo Tange, Prof. Kwak Young Hoon, Prof. Robin Coningham,  Anton Furer and others in the future.
+					</br> </br>
+					Despite Global Committee, the Movement already formed 19 National Committees and other professional and local committees. 
+					</p>
 					<h2>Find Us</h2>
 					<div class="map">
 						<figure class="">
