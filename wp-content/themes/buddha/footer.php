@@ -36,7 +36,7 @@
 		<footer>
 
 			<div class="container_12">
-				<?php echo do_shortcode("[LoginRadius_Share]"); ?>
+				<?php //echo do_shortcode("[LoginRadius_Share]"); ?>
 				<div class="grid_12" align="center">
 					
 					<div class="copy">
