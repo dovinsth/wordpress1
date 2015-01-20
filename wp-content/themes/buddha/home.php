@@ -140,7 +140,7 @@ $post = get_post_field('post_content', $page_id);
 					<blockquote class="bq1">
 						<div class="title">Upcoming Event</div>
 						<p> Will contain recent upcoming event. Need to finalize. </p>
-						<div class="col2">Location Here</div>
+						<div class="col2"><a href=#>Register Here</a></div>  <!-- Registration form url -->
 					</blockquote>
 				</div>
 				<div class="grid_9">
