@@ -8,11 +8,15 @@
 						<p align="justify"> <?php the_content(); ?></p>
 					</article>
 				</div>
-			</div>
-		</div>
+			
 
 	<?php endwhile; ?>	
-	<?php endif; ?>	
+
+	 
+			</div>
+		</div>
+	<?php endif; ?>
+
 <?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>

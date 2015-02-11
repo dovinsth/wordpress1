@@ -102,7 +102,7 @@
 	$args = array(
 			'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
 			'comment_notes_before' => '',
-			'comment_field'        => $smilies.'<p class="comment-form-comment"><textarea id="comment" name="comment" class="comment-textarea"></textarea></p>',
+			// 'comment_field'        => $smilies.'<p class="comment-form-comment"><textarea id="comment" name="comment" class="comment-textarea"></textarea></p>',
 			'comment_notes_after'  => $comment_notes,
 			'title_reply'          => __( 'Leave a Comment', 'river'),
 			'title_reply_to'       => __('Reply to %s &not;<br />','river'), 
