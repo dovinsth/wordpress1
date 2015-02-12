@@ -3,40 +3,22 @@
 Template Name: Peace Marathon Form page
 */
 ?>
-
-<?php
-function redirect($url, $statusCode = 303)
-{
-   header('Location: ' . $url, true, $statusCode);
-   die();
-}
-?>
-
 <?php
 
  if($_SERVER['REQUEST_METHOD'] == 'POST'){
   try{ 
-
+    
     $post = $_POST;  
     $hostname = "localhost";
     $username = "root";
     $password = "";
 
-    $name = $post['name'];
+    $person_name = $post['person_name'];
     $address = $post['address'];
     $telephone = $post['telephone'];
     $fax = $post['fax'];
     $email = $post['email'];
     $age_group = $post['age_group'];
-    // $established = $post['established'];
-    // $total_member = $post['total_member'];
-    // $contact_person = $post['contact_person'];
-    // $designation = $post['designation'];
-    // $tel = $post['tel'];
-    // $objective = $post['objective'];
-    // $participant_count = $post['participant_count'];
-    // $banner_slogan = $post['banner_slogan'];
-
 
    $dbhandle = mysql_connect($hostname, $username, $password) 
      or die("Unable to connect to MySQL");
@@ -45,7 +27,7 @@ function redirect($url, $statusCode = 303)
    $selected = mysql_select_db("slide",$dbhandle) 
      or die("Could not select slide");
 
-   $result = mysql_query("INSERT INTO Peace_Marathon (name,address,telephone,fax,email,age_group) VALUES('".$name."','".$address."','".$telephone."','".$fax."','".$email."','".$age_group."')");
+   $result = mysql_query("INSERT INTO Peace_Marathon (person_name,address,telephone,fax,email,age_group) VALUES('".$person_name."','".$address."','".$telephone."','".$fax."','".$email."','".$age_group."')");
    
    //close the connection
    mysql_close($dbhandle);
@@ -55,6 +37,17 @@ function redirect($url, $statusCode = 303)
         redirect( get_template_directory_uri().'peace_marathon.php');
   }
  }
+?>
+
+
+
+
+<?php
+function redirect($url, $statusCode = 303)
+{
+   header('Location: ' . $url, true, $statusCode);
+   die();
+}
 ?>
 
 
@@ -106,7 +99,7 @@ function redirect($url, $statusCode = 303)
                         
             <tr>
                 <td class="label1">Name: </td>
-                <td class="last"> <input type="text" name="name" id="name" /></td>
+                <td class="last"> <input type="text" name="person_name" id="person_name" /></td>
             </tr>
             <tr>
                 <td class="label1"> Address: </td>
@@ -142,7 +135,7 @@ function redirect($url, $statusCode = 303)
 
         </table>
 
-        
+
             
         </form>
 

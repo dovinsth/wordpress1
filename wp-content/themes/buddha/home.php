@@ -139,8 +139,23 @@ $post = get_post_field('post_content', $page_id);
 					</ul>
 					<blockquote class="bq1">
 						<div class="title">Upcoming Event</div>
-						<p> Will contain recent upcoming event. Need to finalize. </p>
-						<div class="col2"><a href=#>Register Here</a></div>  <!-- Registration form url -->
+						<!-- Dynamic Upcoming Event -->
+						<table>
+							<tr>
+								<td>
+									<a href="<?php echo get_page_link(164); ?>">Peace Marathon Registration</a>
+								</td>
+
+
+							</tr>
+							<tr>
+								<td>
+									<a href="<?php echo get_page_link(150);?>">Peace Rally Registration</a>
+								</td>
+
+							</tr>
+						</table>
+ <!-- Registration form url -->
 					</blockquote>
 				</div>
 				<div class="grid_9">
