@@ -737,6 +737,7 @@ footer {
 .form_table .label2{ width: 150px; padding-left: 50px;}
 .form_table .last { padding: 2px 2px 2px 0px; }
 .form_table input[type="submit"] {width: 100px;}
+.form_table input[type="radio"] {float: left; width: 40px;}
 
 .form_table input
 {

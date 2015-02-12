@@ -5,33 +5,64 @@ Template Name: Peace Rally Form page
 ?>
 
 <?php
-// function redirect($url, $statusCode = 303)
-// {
-//    header('Location: ' . $url, true, $statusCode);
-//    die();
-// }
+function redirect($url, $statusCode = 303)
+{
+   header('Location: ' . $url, true, $statusCode);
+   die();
+}
 ?>
 
-<?php get_header(); ?>
-
 <?php
-    // if($_POST){
 
-    //     $username = "root";
-    //     $password = "";
-    //     $hostname = "localhost"; 
+ if($_SERVER['REQUEST_METHOD'] == 'POST'){
+  try{ 
+    // echo "hello_world"; exit;
+    $post = $_POST;  
+    $hostname = "localhost";
+    $username = "root";
+    $password = "";
 
-    //     //connection to the database
-    //     $dbhandle = mysql_connect($hostname, $username, $password)
-    //     or die("Unable to connect to MySQL");
-    //     //select database
-    //     $selected = mysql_select_db("examples",$dbhandle)
-    //      or die("Could not select examples");
-    //     //execute the SQL query to save records
-    //     $result = mysql_query("sql query here");
-        
-    //     }
-    ?>    
+    $address = $post['address'];
+
+    $organization_name = $post['organization_name'];
+    $address = $post['address'];
+    $telephone = $post['telephone'];
+    $fax = $post['fax'];
+    $email = $post['email'];
+    $site = $post['site'];
+    $established = $post['established'];
+    $total_member = $post['total_member'];
+    $contact_person = $post['contact_person'];
+    $designation = $post['designation'];
+    $tel = $post['tel'];
+    $objective = $post['objective'];
+    $participant_count = $post['participant_count'];
+    $banner_slogan = $post['banner_slogan'];
+
+
+   $dbhandle = mysql_connect($hostname, $username, $password) 
+     or die("Unable to connect to MySQL");
+
+   //select a database to work with
+   $selected = mysql_select_db("slide",$dbhandle) 
+     or die("Could not select slide");
+
+   $result = mysql_query("INSERT INTO Peace_Rally (organization_name,address,telephone,fax,email,site,established,total_member,contact_person,designation,tel,objective,participant_count,banner_slogan) VALUES('".$organization_name."','".$address."','".$telephone."','".$fax."','".$email."','".$site."','".$established."','".$total_member."','".$contact_person."','".$designation."','".$tel."','".$objective."','".$participant_count."','".$banner_slogan."')");
+   
+   //close the connection
+   mysql_close($dbhandle);
+   
+
+  } catch(Exception $e){  
+        redirect( get_template_directory_uri().'peace_rally.php');
+  }
+ }
+?>
+
+
+
+
+<?php get_header(); ?>
 
 
 <div class="content">
@@ -65,7 +96,7 @@ Template Name: Peace Rally Form page
     </table>
     <BR><BR><BR>
 
-        <form action="" id="peace_rally_form">
+        <form action="" id="peace_rally_form" method="POST">
 
         <table class="form_table">
                         
