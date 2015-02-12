@@ -16,7 +16,7 @@ function redirect($url, $statusCode = 303)
 
  if($_SERVER['REQUEST_METHOD'] == 'POST'){
   try{ 
-     // echo "hello_world"; exit;
+
     $post = $_POST;  
     $hostname = "localhost";
     $username = "root";
