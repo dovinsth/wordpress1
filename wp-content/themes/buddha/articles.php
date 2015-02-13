@@ -31,10 +31,19 @@ Template Name: Articles page
 
         <h2>
 <?php   
-    foreach( $recent_posts as $recent ){
+    if ($recent_posts)
+    {
 
-        echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+        foreach( $recent_posts as $recent ){
+
+            echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+        }
     }
+    else
+        {
+            echo "Sorry, there is no content right now in this section. We will be updating very soon.";
+        }
+    
 ?>
 
         </h2>

@@ -138,83 +138,100 @@ $post = get_post_field('post_content', $page_id);
 						</li> -->
 					</ul>
 					<blockquote class="bq1">
-						<div class="title">Upcoming Event</div>
+						<div class="title">Upcoming Events</div>
 						<!-- Dynamic Upcoming Event -->
-						<table>
+						<table CELLPADDING=5px CELLSPACING=0 style="padding: 5px">
 							<tr>
 								<td>
-									<a href="<?php echo get_page_link(164); ?>">Peace Marathon Registration</a>
+								<B>Peace Marathon May 4-5, 2015 </B><BR>
+									<a href="<?php echo get_page_link(164); ?>">register here</a><BR>
 								</td>
 
 
 							</tr>
 							<tr>
 								<td>
-									<a href="<?php echo get_page_link(150);?>">Peace Rally Registration</a>
+									<B>Peace Rally May 4-5, 2015 </B><BR>
+									<a href="<?php echo get_page_link(150);?>">register here</a><BR>
 								</td>
 
 							</tr>
+							<tr>
+								<td>
+									<B>International Conference Belgium</B><BR>
+									<a href="<?php ?>">download here</a><BR>
+								</td>
+
+							</tr>
+							<tr>
+								<td>
+									<B>International Conference Sponsor Form </B><BR>
+									<a href="<?php ?>">download here</a><BR>
+								</td>
+
+							</tr>
+
 						</table>
  <!-- Registration form url -->
 					</blockquote>
 				</div>
 				<div class="grid_9">
-					<h2>Our Campaigns</h2> <!-- Need to make it dynamic -->
+					<h2>Glimpse of our past events</h2> <!-- Need to make it dynamic -->
 					<section>
 						<ul id="da-thumbs" class="da-thumbs">
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th1.jpg';?>" alt="" />
-								<div><span>Helping Adults</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse1.png';?>" alt="" />
+								<!-- <div><span>Helping Adults</span></div> -->
+								<!-- </a> -->
 							</li>
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th2.jpg';?>" alt="" />
-								<div><span>Helping Children</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse2.png';?>" alt="" />
+								<!-- <div><span>Helping Children</span></div> -->
+								<!-- </a> -->
 							</li>
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th3.jpg';?>" alt="" />
-								<div><span>Empowering Women</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse3.png';?>" alt="" />
+								<!-- <div><span>Empowering Women</span></div> -->
+								<!-- </a> -->
 							</li>
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th4.jpg';?>" alt="" />
-								<div><span>Homes for Veterans</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse4.png';?>" alt="" />
+								<!-- <div><span>Homes for Veterans</span></div> -->
+								<!-- </a> -->
 							</li>
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th5.jpg';?>" alt="" />
-								<div><span>Saving Lives</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse5.png';?>" alt="" />
+								<!-- <div><span>Saving Lives</span></div> -->
+								<!-- </a> -->
 							</li>
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th6.jpg';?>" alt="" />
-								<div><span>Invest in Kids</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse6.png';?>" alt="" />
+								<!-- <div><span>Invest in Kids</span></div> -->
+								<!-- </a> -->
 							</li>
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th7.jpg';?>" alt="" />
-								<div><span>Healthy Nutrition</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse7.png';?>" alt="" />
+								<!-- <div><span>Healthy Nutrition</span></div> -->
+								<!-- </a> -->
 							</li>
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th8.jpg';?>" alt="" />
-								<div><span>Educated World</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse8.png';?>" alt="" />
+								<!-- <div><span>Educated World</span></div> -->
+								<!-- </a> -->
 							</li>
 							<li>
-								<a href="#">
-								<img src="<?php echo get_template_directory_uri().'/images/th9.jpg';?>" alt="" />
-								<div><span>Against Hunger</span></div>
-								</a>
+								<!-- <a href="#"> -->
+								<img src="<?php echo get_template_directory_uri().'/images/glimpse/glimpse9.png';?>" alt="" />
+								<!-- <div><span>Against Hunger</span></div> -->
+								<!-- </a> -->
 							</li>
 						</ul>
 					</section>

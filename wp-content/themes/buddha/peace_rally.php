@@ -96,7 +96,7 @@ function redirect($url, $statusCode = 303)
     </table>
     <BR><BR><BR>
 
-        <form action="" id="peace_rally_form" method="POST">
+        <form action="" id="peace_rally_form" method="POST" onsubmit="return confirm('Thank you for the registration. We will get back to you soon. Click OK to complete registration.')">
 
         <table class="form_table">
                         

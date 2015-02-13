@@ -27,31 +27,31 @@ Template Name: About Us Page
 					<h2>Find Us</h2>
 					<div class="map">
 						<figure class="">
-							<iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+							<iframe src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC1OxLQCj0QLUAgGEyrsW2q2WulylcNfKk&q=12+Waurn+Park+Ct,+Belmont+VIC+3216,+Australia"></iframe>
 						</figure>
 						<div class="grid_4 alpha">
 							<h2>Address:</h2>
 							<address>
 								<span class="fa fa-home"></span>
-								Address Here...
+								12 Waurn Park Court, Belmont Victoria - 3216, Australia
 							</address>
 						</div>
 						<div class="grid_4">
-							<h2>Phones:</h2>
+							<h2>Phone:</h2>
 							<div class="m_phone">
 								<div class="fa fa-phone"></div>
-								+977-0123456789
-								<!-- phone no 1 -->
+								+61-415040009
+
 							</div>
-							<div class="m_phone">
+<!-- 							<div class="m_phone">
 								<div class="fa fa-print"></div>
 								+977-01234567
-								<!-- phone no 2 -->
-							</div>
-						</div>
+
+							</div>-->
+						</div> 
 						<div class="grid_4 omega">
 							<h2>Email:</h2>
-							<a href="#"><span class="fa fa-envelope-o"></span> Mail Address here...</a>
+							<a href="mailto:omram2002@gmail.com"><span class="fa fa-envelope-o"></span>omram2002@gmail.com</a>
 						</div>
 						<div class="clear"></div>
 					</div>

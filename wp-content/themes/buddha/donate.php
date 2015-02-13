@@ -11,7 +11,10 @@ Template Name: Donate page
 <?php   
         echo Paypal_payment_accept();
 
+
     ?>
+
+
     </div>
 </div>
 

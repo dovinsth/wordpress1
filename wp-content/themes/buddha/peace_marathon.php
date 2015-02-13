@@ -5,6 +5,7 @@ Template Name: Peace Marathon Form page
 ?>
 <?php
 
+
  if($_SERVER['REQUEST_METHOD'] == 'POST'){
   try{ 
     
@@ -31,7 +32,7 @@ Template Name: Peace Marathon Form page
    
    //close the connection
    mysql_close($dbhandle);
-   
+
 
   } catch(Exception $e){  
         redirect( get_template_directory_uri().'peace_marathon.php');
@@ -53,16 +54,15 @@ function redirect($url, $statusCode = 303)
 
 
 
-
-
 <?php get_header(); ?>
-
-   
+ 
 
 
 <div class="content">
     <div class="container_12">
         <div class="grid_12">
+
+
 
 <!-- ********************   Form starts here *********************** -->
 <BR><BR><BR><BR>
@@ -93,7 +93,7 @@ function redirect($url, $statusCode = 303)
     <p>
         I would like to participate in Lumbini Peace Marathon to contribute in <FONT COLOR="#ff0000"><B>Lumbini Gate Campaign<B></FONT> initiated by students in Nepal.
     </p>
-        <form action="" id="peace_marathon_form" method="POST">
+        <form action="" id="peace_marathon_form" method="POST" onsubmit="return confirm('Thank you for the registration. We will get back to you soon. Click OK to complete registration.')">
 
         <table class="form_table">
                         
