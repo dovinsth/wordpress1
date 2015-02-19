@@ -106,47 +106,17 @@ $post = get_post_field('post_content', $page_id);
 					        echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
 					    }
 					?>
-						<!-- <li>
-							<time datetime="2014-01-01">29<span>Jan</span></time>
-							<div class="extra_wrapper">
-								<div class="title col2"><a href="#">Vivamuagna</a></div>
-								amus at magn
-								malesuada fauc
-							</div>
-						</li>
-						<li>
-							<time datetime="2014-01-01">02<span>Feb</span></time>
-							<div class="extra_wrapper">
-								<div class="title col2"><a href="#">Dereamuagne</a></div>
-								amus at magn
-								malesuada faut
-							</div>
-						</li>
-						<li>
-							<time datetime="2014-01-01">20<span>Feb</span></time>
-							<div class="extra_wrapper">
-								<div class="title col2"><a href="#">Hovamuagrt</a></div>
-								emus at mago malesuada fau
-							</div>
-						</li>
-						<li>
-							<time datetime="2014-01-01">05<span>Mar</span></time>
-							<div class="extra_wrapper">
-								<div class="title col2"><a href="#">Meloamuar</a></div>
-								ferus at magne malesuada faui
-							</div>
-						</li> -->
 					</ul>
-					<blockquote class="bq1">
+					<!-- <blockquote class="bq1">
 						<div class="title">Upcoming Events</div>
-						<!-- Dynamic Upcoming Event -->
+
 						<table CELLPADDING=5px CELLSPACING=0 style="padding: 5px">
 							<tr>
 								<td>
 								<B>Peace Marathon May 4-5, 2015 </B><BR>
 									<a href="<?php echo get_page_link(164); ?>">register here</a><BR>
 								</td>
-
+ 
 
 							</tr>
 							<tr>
@@ -159,21 +129,21 @@ $post = get_post_field('post_content', $page_id);
 							<tr>
 								<td>
 									<B>International Conference Belgium</B><BR>
-									<a href="<?php ?>">download here</a><BR>
+									<a href="<?php echo get_template_directory_uri().'/forms/Registration_For_WPCLN_Inter_Conf_Belgium_2015.pdf' ?>">download here</a><BR>
 								</td>
 
 							</tr>
 							<tr>
 								<td>
 									<B>International Conference Sponsor Form </B><BR>
-									<a href="<?php ?>">download here</a><BR>
+									<a href="<?php echo get_template_directory_uri().'/forms/International_Conference_Sponsor.pdf' ?>">download here</a><BR>
 								</td>
 
 							</tr>
 
 						</table>
- <!-- Registration form url -->
-					</blockquote>
+
+					</blockquote> -->
 				</div>
 				<div class="grid_9">
 					<h2>Glimpse of our past events</h2> <!-- Need to make it dynamic -->

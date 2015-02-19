@@ -74,7 +74,7 @@ function redirect($url, $statusCode = 303)
 <table width="780px">
         <tr>
             <td>
-                <IMG SRC="<?php echo get_template_directory_uri().'/forms/images/main_logo.jpg'; ?>" NAME="Picture 0" WIDTH=115 HEIGHT=155 BORDER=0>
+                <IMG SRC="<?php echo get_template_directory_uri().'/forms/images/main_logo.jpg'; ?>" NAME="Event Logo" WIDTH=115 HEIGHT=155 BORDER=0>
 
             </td>
             <td>
@@ -82,7 +82,7 @@ function redirect($url, $statusCode = 303)
                     <FONT FACE="Arial, serif">
                         <FONT COLOR="#7e4e21" SIZE=4 STYLE="font-size: 14pt"><B>World Peace City Lumbini, Nepal <BR> 
                         International Conference 2015</B> <BR></FONT>
-                        <FONT COLOR="#ff0000" SIZE=3><B>May 4-5, 2015</B> <BR></FONT>
+                        <FONT COLOR="#ff0000" SIZE=3><B>May 4, 2015</B> <BR></FONT>
                         <FONT SIZE=3><B>Bedford Hotel and Congress Centre Brussels</B> <BR><B>Rue Du Midi 135, Brussels, 1000, Belgium</B> <BR></FONT>
                     
                         <FONT COLOR="#ff0000" SIZE=5 STYLE="font-size: 20pt"><B>World Peace Rally and Buddha Jayanti</B> <BR> </FONT>

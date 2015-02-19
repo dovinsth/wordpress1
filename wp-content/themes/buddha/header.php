@@ -35,7 +35,9 @@
 
 <style type="text/css">
 header{
-  background-color: #ECFFFF;
+	background-image: url("<?php echo get_template_directory_uri().'/images/head_banner.png'; ?>");
+
+  /*background-color: #ECFFFF;*/
 }
 body{
 /*background:
@@ -61,7 +63,7 @@ background-color: #ECFFFF;
 				<div class="grid_12">
 					<h1>
 						<a href="../home">
-							<img src="http://localhost/wordpress1/wp-content/themes/buddha/images/main-logo1.png" alt="Your Happy Family">
+							<img src="<?php echo get_template_directory_uri().'/images/main-logo1.png'; ?>" alt="Main Logo">
 						</a>
 					</h1>
 					<div class="menu_block ">
