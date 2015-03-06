@@ -19,8 +19,8 @@ function redirect($url, $statusCode = 303)
     // echo "hello_world"; exit;
     $post = $_POST;  
     $hostname = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "worldami_live";
+    $password = "changeme@2";
 
     $address = $post['address'];
 
@@ -44,8 +44,8 @@ function redirect($url, $statusCode = 303)
      or die("Unable to connect to MySQL");
 
    //select a database to work with
-   $selected = mysql_select_db("slide",$dbhandle) 
-     or die("Could not select slide");
+   $selected = mysql_select_db("worldami_live_db",$dbhandle) 
+     or die("Could not select worldami_live_db");
 
    $result = mysql_query("INSERT INTO Peace_Rally (organization_name,address,telephone,fax,email,site,established,total_member,contact_person,designation,tel,objective,participant_count,banner_slogan) VALUES('".$organization_name."','".$address."','".$telephone."','".$fax."','".$email."','".$site."','".$established."','".$total_member."','".$contact_person."','".$designation."','".$tel."','".$objective."','".$participant_count."','".$banner_slogan."')");
    
@@ -96,27 +96,28 @@ function redirect($url, $statusCode = 303)
     </table>
     <BR><BR><BR>
 
+
         <form action="" id="peace_rally_form" method="POST" onsubmit="return confirm('Thank you for the registration. We will get back to you soon. Click OK to complete registration.')">
 
         <table class="form_table">
                         
             <tr>
                 <td class="label1">Organization Name: </td>
-                <td class="last"> <input type="text" name="organization_name" id="organization_name" /></td>
+                <td class="last"> <input type="text" name="organization_name" id="organization_name" required/></td>
             </tr>
             <tr>
                 <td class="label1"> Address: </td>
-                <td class="last"><textarea type="text" name="address" id="address" rows="4" cols="60" /></textarea> </td>
+                <td class="last"><textarea type="text" name="address" id="address" rows="4" cols="60" required/></textarea> </td>
             </tr>
             <tr>
                 <td class="label1">Telephone:</td>
-                <td><input type="text" name="telephone" id="telephone"/></td>
+                <td><input type="text" name="telephone" id="telephone" required/></td>
                 <td class="label2"> Fax:</td> 
                 <td><input type="text" name="fax" id="fax"/></td>
             </tr>
             <tr>
                 <td class="label1">Email:</td>
-                <td><input type="text" name="email" id="email"/></td>
+                <td><input type="text" name="email" id="email" required/></td>
                 <td class="label2"> Site:</td> 
                 <td><input type="text" name="site" id="site"/></td>
             </tr>
@@ -124,17 +125,17 @@ function redirect($url, $statusCode = 303)
                 <td class="label1"> Established in:</td>
                 <td> <input type="date" name="established" id="established"/></td>
                 <td class="label2"> Total Members:</td> 
-                <td> <input type="text" name="total_member" id="total_member"/></td>
+                <td> <input type="text" name="total_member" id="total_member" required/></td>
             </tr>
             <tr>
                 <td class="label1">Contact Person: </td>
-                <td class="last"> <input type="text" name="contact_person" id="contact_person" /></td>
+                <td class="last"> <input type="text" name="contact_person" id="contact_person" required/></td>
             </tr>
             <tr>
                 <td class="label1"> Designation:</td>
-                <td> <input type="text" name="designation" id="designation"/></td>
+                <td> <input type="text" name="designation" id="designation" required/></td>
                 <td class="label2"> Tel:</td> 
-                <td> <input type="text" name="tel" id="tel"/></td>
+                <td> <input type="text" name="tel" id="tel" required/></td>
             </tr>
             <tr>
                 <td class="label1"> Objective: </td>
@@ -142,11 +143,11 @@ function redirect($url, $statusCode = 303)
             </tr>
             <tr>
                 <td class="label1">Estimated participants in the rally: </td>
-                <td class="last"> <input type="text" name="participant_count" id="participant_count" /></td>
+                <td class="last"> <input type="text" name="participant_count" id="participant_count" required/></td>
             </tr>
             <tr>
                 <td class="label1">Banner Slogan: </td>
-                <td class="last"> <textarea type="text" name="banner_slogan" id="banner_slogan" rows="3" cols="50" /></textarea></td>
+                <td class="last"> <textarea type="text" name="banner_slogan" id="banner_slogan" rows="3" cols="50" required/></textarea></td>
             </tr>
            <!--  <tr>
                 <td> 

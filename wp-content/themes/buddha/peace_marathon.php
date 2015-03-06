@@ -11,8 +11,8 @@ Template Name: Peace Marathon Form page
     
     $post = $_POST;  
     $hostname = "localhost";
-    $username = "root";
-    $password = "";
+    $username = "worldami_live";
+    $password = "changeme@2";
 
     $person_name = $post['person_name'];
     $address = $post['address'];
@@ -25,8 +25,8 @@ Template Name: Peace Marathon Form page
      or die("Unable to connect to MySQL");
 
    //select a database to work with
-   $selected = mysql_select_db("slide",$dbhandle) 
-     or die("Could not select slide");
+   $selected = mysql_select_db("worldami_live_db",$dbhandle) 
+     or die("Could not select worldami_live_db");
 
    $result = mysql_query("INSERT INTO Peace_Marathon (person_name,address,telephone,fax,email,age_group) VALUES('".$person_name."','".$address."','".$telephone."','".$fax."','".$email."','".$age_group."')");
    
@@ -96,35 +96,35 @@ function redirect($url, $statusCode = 303)
         <form action="" id="peace_marathon_form" method="POST" onsubmit="return confirm('Thank you for the registration. We will get back to you soon. Click OK to complete registration.')">
 
         <table class="form_table">
-                        
+               name, address, telephone, email, age_group          
             <tr>
                 <td class="label1">Name: </td>
-                <td class="last"> <input type="text" name="person_name" id="person_name" /></td>
+                <td class="last"> <input type="text" name="person_name" id="person_name" required/></td>
             </tr>
             <tr>
                 <td class="label1"> Address: </td>
-                <td class="last"><textarea type="text" name="address" id="address" rows="4" cols="60" /></textarea> </td>
+                <td class="last"><textarea type="text" name="address" id="address" rows="4" cols="60" required/></textarea> </td>
             </tr>
             <tr>
                 <td class="label1">Telephone:</td>
-                <td><input type="text" name="telephone" id="telephone"/></td>
+                <td><input type="text" name="telephone" id="telephone" required/></td>
                 <td class="label2"> Fax:</td> 
                 <td><input type="text" name="fax" id="fax"/></td>
             </tr>
             <tr>
                 <td class="label1">Email:</td>
-                <td><input type="text" name="email" id="email"/></td>
+                <td><input type="text" name="email" id="email" required/></td>
             </tr>
             <tr>
                 <td>
                     Age Group:
                 </td>
                 <td>
-                    <input type="radio" name="age_group" value="first_group">16-30
+                    <input type="radio" name="age_group" value="16-30" required>16-30
                     <BR>
-                    <input type="radio" name="age_group" value="second_group">31-50
+                    <input type="radio" name="age_group" value="31-50">31-50
                     <BR>
-                    <input type="radio" name="age_group" value="third_group">50 over
+                    <input type="radio" name="age_group" value="50 over">50 over
                 </td>
             </tr>
            <!--  <tr>

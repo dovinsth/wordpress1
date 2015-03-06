@@ -94,6 +94,6 @@
 				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
 			});
 		</script>
-		<?php wp_footer(); ?>
+		<!-- <?php wp_footer(); ?> -->
 	</body>
 </html>

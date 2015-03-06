@@ -5,14 +5,15 @@ Template Name: Donate page
 ?>
 
 
+
 <?php get_header(); ?>
 <div class="container_12">
     <div class="grid_13" >
-<?php   
-        echo Paypal_payment_accept();
+<!--     <h1>For Donation, please proceed here</h1> <BR>
+<?php echo do_shortcode( '[paypal_donation_button]' ); ?> <BR> <BR>
+ -->
 
 
-    ?>
 
 
     </div>

@@ -23,7 +23,15 @@ body {
 .container_12 {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
   width: 1100px;
+}
+.container_header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 100%;
+  height: 116px;
 }
 
 /* `Grid >> Global
@@ -55,7 +63,15 @@ body {
   margin-right: 100px;
 
 }
+.grid_14{
+  display: inline;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 
+}
 .push_1, .pull_1,
 .push_2, .pull_2,
 .push_3, .pull_3,
@@ -135,6 +151,16 @@ body {
 .container_12 .grid_13 {
   width: 780px;
 }
+
+.container_12 .grid_14 {
+  width: 1080px;
+}
+
+.container_header .grid_15{
+  width: 1080px;
+  height: 166px;
+}
+
 
 /* `Prefix Extra Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/

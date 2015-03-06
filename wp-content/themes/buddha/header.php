@@ -35,8 +35,9 @@
 
 <style type="text/css">
 header{
-	background-image: url("<?php echo get_template_directory_uri().'/images/head_banner.png'; ?>");
-
+	background-image: url("<?php echo get_template_directory_uri().'/images/banner2.jpg'; ?>");
+	background-size: cover;
+	margin-top: 0px;
   /*background-color: #ECFFFF;*/
 }
 body{
@@ -63,7 +64,7 @@ background-color: #ECFFFF;
 				<div class="grid_12">
 					<h1>
 						<a href="../home">
-							<img src="<?php echo get_template_directory_uri().'/images/main-logo1.png'; ?>" alt="Main Logo">
+							<img src="<?php echo get_template_directory_uri().'/images/cutmypic.png'; ?>" alt="Main Logo">
 						</a>
 					</h1>
 					<div class="menu_block ">

@@ -16,7 +16,7 @@
 			</div>
 		</div>
 	<?php endif; ?>
-
+<!-- <?php echo do_shortcode('[facebook-members]'); ?> -->
 <?php //get_sidebar(); ?>
 
 <?php get_footer(); ?>

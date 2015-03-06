@@ -30,7 +30,7 @@ Template Name: Conferences page
                             <tr>
 
                                 <td>
-                                <B>Peace Marathon May 4, 2015 </B><BR>
+                                <B>Lumbini Peace Marathon May 4, 2015 </B><BR>
                                     <a href="<?php echo get_page_link(164); ?>">register here</a><BR>
                                 </td>
  
@@ -38,7 +38,7 @@ Template Name: Conferences page
                             </tr>
                             <tr>
                                 <td>
-                                    <B>Peace Rally May 4, 2015 </B><BR>
+                                    <B>World Peace Rally May 4, 2015 </B><BR>
                                     <a href="<?php echo get_page_link(150);?>">register here</a><BR>
                                 </td>
 
