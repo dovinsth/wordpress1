@@ -27,9 +27,10 @@ Template Name: Videos page
 <div class="container_12">
     <div class="grid_10">
 
-<!-- Add photo plugin here -->  
 
-        <h2>
+<h2>Recent Posts</h2>
+
+        <h1>
 <?php   
     if ($recent_posts)
     {
@@ -37,6 +38,7 @@ Template Name: Videos page
         foreach( $recent_posts as $recent ){
 
             echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+            echo "<BR>";
         }
     }
     else
@@ -46,7 +48,7 @@ Template Name: Videos page
     
 ?>
 
-        </h2>
+        </h1>
     </div>
 </div>
 

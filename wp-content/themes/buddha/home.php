@@ -75,11 +75,26 @@ $post = get_post_field('post_content', $page_id);
 					<h2>Recent Post</h2>
 					<!-- <img src="images/page1_img1.jpg" alt="" class="img_inner fleft"> -->
 					<div class="extra_wrapper">
-						<?php query_posts("post_per_page =1 "); the_post();?>
+
+						<?php
+						$args = array( 'numberposts' => '5' );
+						$recent_posts = wp_get_recent_posts( $args );
+						foreach( $recent_posts as $recent ){
+							echo '<a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a>  ';
+							echo '<BR><BR>';
+
+						}
+						?>
+
+
+<!-- 						<?php query_posts("post_per_page =3 "); the_post();?>
 							<?php the_title(); ?>
 							<?php the_excerpt();?>
 							<a href="<?php the_permalink();?>" class="btn">Continue Reading...</a>
 						<?php wp_reset_query();?>
+
+ -->
+
 						<!-- <p class="col2"><a href="#">Cras facilisis, nulla vel viverra tor, leo magna sodales felis, quis </a></p>
 						Proin pharetra luctus diamer scelerisque eros convallisa <br>
 						<a href="#" class="btn">Learn More</a> -->
@@ -90,9 +105,8 @@ $post = get_post_field('post_content', $page_id);
 					<h2>Our Mission</h2>
 					<div class="rel1">
 						<!-- Our Mission Content Here -->
-						<p> Need to update this section with our mission.</p>
+						<p> To spread Buddha’s peace and nonviolence messages and promote Buddha's birthplace Lumbini, Nepal all over the world.</p>
 					</div>
-					<a href="#" class="btn">Continue Reading...</a>
 				</div>
 			</div>
 			<div class="hor"></div>

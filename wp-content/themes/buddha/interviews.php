@@ -29,9 +29,10 @@ Template Name: Interviews page
 <div class="container_12">
     <div class="grid_10">
 
-<!-- Add photo plugin here -->  
 
-        <h2>
+<h2>Recent Posts</h2>
+
+        <h1>
 <?php   
     if ($recent_posts)
     {
@@ -39,6 +40,7 @@ Template Name: Interviews page
         foreach( $recent_posts as $recent ){
 
             echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+            echo "<BR>";
         }
     }
     else
@@ -48,7 +50,7 @@ Template Name: Interviews page
     
 ?>
 
-        </h2>
+        </h1>
     </div>
 </div>
 

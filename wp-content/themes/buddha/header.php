@@ -35,10 +35,8 @@
 
 <style type="text/css">
 header{
-	background-image: url("<?php echo get_template_directory_uri().'/images/banner2.jpg'; ?>");
-	background-size: cover;
-	margin-top: 0px;
-  /*background-color: #ECFFFF;*/
+
+  background-color: #ECFFFF;
 }
 body{
 /*background:
@@ -59,6 +57,12 @@ background-color: #ECFFFF;
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
+
+			
+			<div width=100% >
+				<img src="<?php echo get_template_directory_uri().'/images/banner2.jpg'; ?>" alt="Worldamity Banner">
+			</div>
+
 		<header >
 			<div class="container_12">
 				<div class="grid_12">
